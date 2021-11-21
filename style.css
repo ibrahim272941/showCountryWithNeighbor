@@ -1,6 +1,4 @@
-body{
-  
-}
+
 
 .title {
   /* display: flex; */
@@ -37,8 +35,7 @@ html {
 
 body {
   font-family: system-ui;
-  /* color: #555; */
-  /* background-color: #f7f7f7; */
+  
   min-height: 96vh;
    background-image: linear-gradient(to right, rgba(0, 3, 5, 0.52), rgba(1, 24, 32, 0.73)),
    url('image.png');
@@ -205,3 +202,74 @@ body {
   border-radius: .4rem;
 }
 
+@media (max-width:450px){
+  .country {
+    
+    font-size: .8rem;
+    width: 30rem;
+    height: 12rem;
+    
+    /* overflow: hidden; */
+  }
+  .country__img {
+    
+    width: 1rem;
+    height: 12rem;
+    
+  }
+
+  .country__data {
+    float: left;
+    flex: 50%;
+    padding: .1rem 0rem .2rem .5rem;
+  }
+
+  .country__name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .country__region {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+    
+  }
+
+  .country__row:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .country__row span {
+    width: 1rem;
+    
+    font-size: .6rem;
+  }
+
+  .images {
+    display: flex;
+  }
+
+  .images img {
+    
+    width: 10rem;
+    margin: 1rem;
+  }
+
+  
+
+
+  .neighbor::before {
+    content: 'Neighbour country';
+    width: 10rem;
+    position: absolute;
+    top: -4rem;
+
+    left: 9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 230, 4);
+  }
+
+  
+}
